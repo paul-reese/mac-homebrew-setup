@@ -50,7 +50,6 @@ brew install gh
 brew install git
 brew install git-gui
 brew install gmp
-brew install go
 brew install helm
 brew install httpie
 brew install hub
@@ -127,13 +126,13 @@ npm install -g grpcc
 python -m pip install --upgrade setuptools
 
 # Go development
-export GOPATH="${HOME}/.go"
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
-test -d "${GOPATH}" || mkdir "${GOPATH}"
-test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
+#export GOPATH="${HOME}/.go"
+#export GOROOT="$(brew --prefix golang)/libexec"
+#export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+#test -d "${GOPATH}" || mkdir "${GOPATH}"
+#test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
-brew install go
+brew install golang
 
 go get golang.org/x/tools/cmd/godoc
 
