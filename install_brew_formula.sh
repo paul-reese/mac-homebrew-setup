@@ -1,12 +1,5 @@
-xcode-select --install
-
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
-
 brew doctor
 
-brew update 
 brew tap caskroom/cask
 brew tap cloudfoundry/tap
 brew tap AdoptOpenJDK/openjdk
@@ -16,7 +9,6 @@ brew tap derailed/k9s
 brew tap hashicorp/tap
 brew tap homebrew/cask
 brew tap homebrew/core
-brew tap k14s/tap
 brew tap pivotal/tap
 brew tap romkatv/powerlevel10k
 
@@ -25,6 +17,7 @@ brew install --cask \
    alfred \
    docker \
    google-cloud-sdk \
+   java \
    minikube \
    skitch \
    spectacle \
@@ -116,13 +109,9 @@ brew install zsh
 brew install zsh-syntax-highlighting
 brew install zstd
 
-# figure out what to update here
-# npm install -g grpcc
-
 # Go development
 #export GOPATH="${HOME}/.go"
 #export GOROOT="$(brew --prefix golang)/libexec"
 #export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 #test -d "${GOPATH}" || mkdir "${GOPATH}"
 #test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
-
