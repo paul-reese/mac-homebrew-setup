@@ -11,31 +11,14 @@ brew tap caskroom/cask
 brew tap cloudfoundry/tap
 brew tap AdoptOpenJDK/openjdk
 brew tap starkandwayne/cf
-
-brew cask install 1password
-brew cask install adoptopenjdk
-brew cask install alfred
-brew cask install atom
-brew cask install cf-cli
-#brew cask install google-chrome
-brew cask install google-cloud-sdk
-#brew cask install google-backup-and-sync
-brew cask install clipy
-brew cask install docker
-brew cask install docker-toolbox
-brew cask install insomnia
-brew cask install java
-brew cask install minikube
-#brew cask install slack
-brew cask install virtualbox
-brew cask install vagrant
-brew cask install vagrant-manager
-brew cask install sourcetree
-brew cask install skitch
-brew cask install spectacle
-brew cask install sublime-text
-brew cask install totalfinder
-brew cask install visual-studio-code
+brew tap buildpacks/tap
+brew tap derailed/k9s
+brew tap hashicorp/tap
+brew tap homebrew/cask
+brew tap homebrew/core
+brew tap k14s/tap
+brew tap pivotal/tap
+brew tap romkatv/powerlevel10k
 
 brew install fish
 brew install git
