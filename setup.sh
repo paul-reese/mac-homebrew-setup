@@ -48,6 +48,7 @@ brew install gdbm
 brew install gettext
 brew install gh
 brew install git
+brew install git-gui
 brew install gmp
 brew install go
 brew install helm
