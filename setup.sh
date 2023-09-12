@@ -11,13 +11,10 @@ brew tap caskroom/cask
 brew tap cloudfoundry/tap
 brew tap AdoptOpenJDK/openjdk
 brew tap starkandwayne/cf
-brew tap buildpacks/tap
 brew tap derailed/k9s
 brew tap hashicorp/tap
 brew tap homebrew/cask
 brew tap homebrew/core
-brew tap k14s/tap
-brew tap pivotal/tap
 brew tap romkatv/powerlevel10k
 
 brew install --cask \
@@ -34,10 +31,8 @@ brew install autoconf
 brew install automake
 brew install awscli
 brew install azure-cli
-brew install berkeley-db
 brew install brotli
 brew install c-ares
-brew install cf-cli
 brew install coreutils
 brew install dep
 brew install fish
@@ -58,12 +53,12 @@ brew install isl
 brew install jemalloc
 brew install jq
 brew install k9s
-brew install kbld
 brew install kind
 brew install kubectx
 brew install kubernetes-cli
 brew install kubernetes-helm
 brew install kustomize
+brew install jenv
 brew install libev
 brew install libgpg-error
 brew install libidn2
@@ -84,7 +79,9 @@ brew install nghttp2
 brew install node
 brew install octant
 brew install openjdk
-brew install openssl@1.1
+brew install openjdk@17
+brew install openjdk@16
+brew install openjdk@11
 brew install pack
 brew install pcre
 brew install pcre2
@@ -94,9 +91,6 @@ brew install powerlevel10k
 brew install python@3.10
 brew install rbenv
 brew install readline
-brew install ruby
-brew install ruby-build
-brew install ruby-install
 brew install siege
 brew install six
 brew install sqlite
@@ -126,3 +120,13 @@ brew install zstd
 #test -d "${GOPATH}" || mkdir "${GOPATH}"
 #test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
+# add Java_versions to jEnv
+jenv add /opt/homebrew/opt/openjdk@20/libexec/openjdk.jdk/Contents/Home/
+jenv add /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home/
+jenv add /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home/
+
+echo "check installed versions"
+jenv versions
+
+echo "set local version of JDK to 1.20"
+jenv local 20.0
