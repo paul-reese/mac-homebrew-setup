@@ -111,16 +111,6 @@ brew install zsh
 brew install zsh-syntax-highlighting
 brew install zstd
 
-# figure out what to update here
-# npm install -g grpcc
-
-# Go development
-#export GOPATH="${HOME}/.go"
-#export GOROOT="$(brew --prefix golang)/libexec"
-#export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
-#test -d "${GOPATH}" || mkdir "${GOPATH}"
-#test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
-
 # add Java_versions to jEnv
 jenv add /opt/homebrew/opt/openjdk@20/libexec/openjdk.jdk/Contents/Home/
 jenv add /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home/
