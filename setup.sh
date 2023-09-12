@@ -82,6 +82,7 @@ brew install openjdk
 brew install openjdk@17
 brew install openjdk@16
 brew install openjdk@11
+brew install openjdk@8
 brew install pack
 brew install pcre
 brew install pcre2
@@ -124,6 +125,7 @@ brew install zstd
 jenv add /opt/homebrew/opt/openjdk@20/libexec/openjdk.jdk/Contents/Home/
 jenv add /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home/
 jenv add /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home/
+jenv add /opt/homebrew/opt/openjdk@8/libexec/openjdk.jdk/Contents/Home/
 
 echo "check installed versions"
 jenv versions
