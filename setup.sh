@@ -7,14 +7,10 @@ echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
 brew doctor
 
 brew update 
-brew tap caskroom/cask
-brew tap cloudfoundry/tap
+brew tap homebrew/cask
 brew tap AdoptOpenJDK/openjdk
-brew tap starkandwayne/cf
 brew tap derailed/k9s
 brew tap hashicorp/tap
-brew tap homebrew/cask
-brew tap homebrew/core
 brew tap romkatv/powerlevel10k
 
 brew install --cask \
@@ -22,7 +18,6 @@ brew install --cask \
    alfred \
    docker \
    google-cloud-sdk \
-   minikube \
    skitch \
    spectacle \
    sublime-text
@@ -79,10 +74,9 @@ brew install nghttp2
 brew install node
 brew install octant
 brew install openjdk
+brew install openjdk@21
 brew install openjdk@17
-brew install openjdk@16
 brew install openjdk@11
-brew install openjdk@8
 brew install pack
 brew install pcre
 brew install pcre2
@@ -122,3 +116,9 @@ jenv versions
 
 echo "set local version of JDK to 1.20"
 jenv local 20.0
+
+## install sdkman
+echo "install sdkman"
+curl -s "https://get.sdkman.io" | bash
+
+
